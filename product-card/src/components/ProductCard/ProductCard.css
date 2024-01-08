@@ -6,9 +6,9 @@
 
   background-color: rgb(221, 203, 203);
   padding: 0;
-
-
-
+  background-image: url("/lenovo.jpg");
+  background-size: 10%;
+  background-repeat: no-repeat;
 
 }
 
