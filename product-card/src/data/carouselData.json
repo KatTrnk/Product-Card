@@ -1,21 +1,21 @@
 {
   "slides": [
     {
-      "src": "../src/components/Carousel/slim1.avif",
+      "src": "/src/public/slim1.avif",
       "alt": "Img 1 for carousel"
     },
     {
-      "src": "../src/components/Carousel/slim2.avif",
+      "src": "/src/public/slim2.avif",
       "alt": "Img 2 for carousel"
     },
 
     {
-      "src": "../src/components/Carousel/slim3.avif",
+      "src": "../src/public/slim3.avif",
       "alt": "Img 3 for carousel"
     },
 
     {
-      "src": "../src/components/Carousel/slim4.avif",
+      "src": "../src/public/slim4.avif",
       "alt": "Img 4 for carousel"
     }
   ]
