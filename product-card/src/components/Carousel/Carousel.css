@@ -1,0 +1,108 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  position: relative;
+  background-color: white;
+
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 7px #666;
+
+}
+
+.slide {
+  width: 80%;
+  height: 80%;
+  border: none;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+  color: grey;
+  filter: drop-shadow(0px 0px 10px white)
+}
+
+.arrow-left {
+  left: 1.8rem;
+
+}
+
+.arrow-right {
+  right: 1.8rem;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.indicators {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.indicator {
+  background-color: black;
+  height: 6px;
+  width: 2px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px white;
+  margin: 0 0.2rem;
+  cursor: pointer;
+
+}
+
+.indicator-inactive {
+  background-color: rgb(110, 107, 107);
+}
+
+/* FOR TABLET */
+@media (min-width:680px) {
+
+  .carousel {
+    height: 400px;
+
+  }
+
+  .indicator {
+    height: 8px;
+    width: 5px;
+
+  }
+
+  .arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+
+  }
+}
+
+/* FOR DESKTOP */
+
+@media (min-width:1200px) {
+  .carousel {
+    height: 550px;
+
+  }
+
+  .indicator {
+    height: 10px;
+    width: 5px;
+
+  }
+
+  .arrow {
+    width: 1.7rem;
+    height: 1.7rem;
+
+  }
+}

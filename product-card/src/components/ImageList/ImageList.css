@@ -1,0 +1,76 @@
+.image-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 850px;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.image-list img {
+  width: 45px;
+  height: 45px;
+  color: black;
+}
+
+.image-list p {
+  margin: 0;
+  font-style: italic;
+}
+
+.image1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+
+}
+
+.image2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.image3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+
+/* FOR TABLET */
+@media (min-width:680px) {
+  .image-list img {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  .image-list p {
+    font-size: 1.2rem;
+  }
+
+}
+
+/* FOR DESKTOP */
+@media (min-width:1200px) {
+  .image-list img {
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+  }
+
+
+  .image-list p {
+    font-size: 1.3rem;
+  }
+
+}
