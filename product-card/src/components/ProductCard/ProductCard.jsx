@@ -5,17 +5,8 @@ import { Carousel } from '../Carousel/Carousel';
 import { slides } from '../../data/carouselData.json';
 
 export const ProductCard = () => {
-  // const [button, setButton] = useState('Koupit');
   const [quantity, setQuantity] = useState(15);
   const [pieces, setPieces] = useState(0);
-
-  // const handleClick = () => {
-  //   setButton('Koupeno');
-  //   if (button === 'Koupeno') {
-  //     setButton('Koupit');
-  //   }
-  //   setQuantity(quantity - 1);
-  // };
 
   return (
     <div className="card">
@@ -41,17 +32,6 @@ export const ProductCard = () => {
           </p>
           <div className="card-details-pieces">
             <button
-              className="piecesInCart"
-              type="button"
-              disabled={pieces === quantity ? true : false}
-              onClick={() => {
-                setPieces(pieces + 1);
-              }}
-            >
-              +
-            </button>
-            <p>{pieces}</p>
-            <button
               className="piecesRemovedCart"
               type="button"
               disabled={pieces === 0 ? true : false}
@@ -62,16 +42,21 @@ export const ProductCard = () => {
               {' '}
               -{' '}
             </button>
+            <p>{pieces}</p>
+            <button
+              className="piecesInCart"
+              type="button"
+              disabled={pieces === quantity ? true : false}
+              onClick={() => {
+                setPieces(pieces + 1);
+              }}
+            >
+              +
+            </button>
           </div>
           <button
             className="card-details-button"
             disabled={pieces === 0 ? true : false}
-            // onClick={handleClick}
-            // className={
-            //   button === 'Koupeno'
-            //     ? 'card-details-button--koupeno'
-            //     : 'card-details-button'
-            // }
             type="button"
           >
             <a href=" https://www.lenovo.com/cz/cs/laptops/ideapad/3-series/IdeaPad-Slim-3i-Gen-8-16-inch-Intel/p/LEN101I0085">
