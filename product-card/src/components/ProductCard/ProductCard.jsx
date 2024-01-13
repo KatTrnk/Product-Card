@@ -6,7 +6,7 @@ import { slides } from '../../data/carouselData.json';
 
 export const ProductCard = () => {
   const [quantity, setQuantity] = useState(15);
-  const [pieces, setPieces] = useState(0);
+  const [count, setCount] = useState(0);
 
   return (
     <div className="card">
@@ -34,21 +34,21 @@ export const ProductCard = () => {
             <button
               className="piecesRemovedCart"
               type="button"
-              disabled={pieces === 0 ? true : false}
+              disabled={count === 0 ? true : false}
               onClick={() => {
-                setPieces(pieces - 1);
+                setCount(count - 1);
               }}
             >
               {' '}
               -{' '}
             </button>
-            <p>{pieces}</p>
+            <p>{count}</p>
             <button
               className="piecesInCart"
               type="button"
-              disabled={pieces === quantity ? true : false}
+              disabled={count === quantity ? true : false}
               onClick={() => {
-                setPieces(pieces + 1);
+                setCount(count + 1);
               }}
             >
               +
@@ -56,7 +56,7 @@ export const ProductCard = () => {
           </div>
           <button
             className="card-details-button"
-            disabled={pieces === 0 ? true : false}
+            disabled={count === 0 ? true : false}
             type="button"
           >
             <a href=" https://www.lenovo.com/cz/cs/laptops/ideapad/3-series/IdeaPad-Slim-3i-Gen-8-16-inch-Intel/p/LEN101I0085">
