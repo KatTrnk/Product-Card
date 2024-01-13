@@ -48,6 +48,8 @@ h1 {
 
 }
 
+
+
 .card-details {
   display: flex;
   flex-direction: column;
@@ -65,10 +67,19 @@ h1 {
 
 }
 
+
+.card-details-price-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-details-price {
   font-size: 1.4rem;
   font-weight: bold;
   margin: 0;
+
 }
 
 .card-details-stock {
@@ -77,6 +88,7 @@ h1 {
 }
 
 .card-details-button {
+  color: black;
   text-align: right;
   padding-right: 20px;
   margin-bottom: 20px;
@@ -93,27 +105,25 @@ h1 {
   background-position: calc(100%/10)
 }
 
-.card-details-button--koupeno {
-  text-align: right;
-  padding-right: 15px;
-  margin-bottom: 20px;
-  border-radius: 2% 2%;
-  width: 150px;
-  height: 40px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 2% 2%;
-  background-color: white;
-  background-image: url("./shopping-cart.webp");
-  background-repeat: no-repeat;
-  background-size: 25%;
-  background-position: calc(100%/10)
+a {
+  text-decoration: none;
+  color: black;
 }
+
 
 button:hover {
   cursor: pointer;
 }
 
+.card-details-pieces {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-size: 1rem;
+
+}
 
 /* FOR TABLET */
 @media (min-width:680px) {
@@ -147,12 +157,6 @@ button:hover {
   }
 
 
-
-  .card-details-price-info {
-    display: flex;
-    flex-direction: column;
-  }
-
   .card-details-price {
     font-size: 1.4rem;
     font-weight: bold;
@@ -162,7 +166,8 @@ button:hover {
   .card-details-stock {
     margin-top: 5px;
     margin-bottom: 20px;
-    font-size: 1rem
+    font-size: 1rem;
+    text-align: center;
   }
 
   .card-details-button {
@@ -174,11 +179,13 @@ button:hover {
 
   }
 
-  .card-details-button--koupeno {
-    width: 160px;
-    height: 45px;
-    font-size: 1.2rem;
+  .card-details-pieces {
+    gap: 10px;
+    font-size: 1.3rem;
+
   }
+
+
 
 
 }
@@ -229,12 +236,10 @@ button:hover {
 
   }
 
-  .card-details-button--koupeno {
+  .card-details-pieces {
+    gap: 14px;
     font-size: 1.7rem;
-    width: 210px;
-    margin-bottom: 5px;
-    height: 70px;
-
 
   }
+
 }
